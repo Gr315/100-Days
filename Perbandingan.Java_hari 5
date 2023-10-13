@@ -1,0 +1,18 @@
+package Perbandingan;
+
+public class Perbandingan {
+    
+    public static void main(String[] args) {
+        int angka1 = 400;
+        int angka2 = 600;
+        
+        System.out.print("angka1 lebih besar daripada angka2");
+        System.out.println(angka1 > angka2);
+        System.out.print("angka1 sama dengan angka2");
+        System.out.println(angka1 == angka2);
+        System.out.print("angka1 tidak sama dengan angka2");
+        System.out.println(angka1 != angka2);
+        
+    }
+    
+}
