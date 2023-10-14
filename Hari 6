@@ -1,0 +1,35 @@
+package logic;
+
+public class logika {
+    
+    public static void main(String[] args) {
+        boolean a = true;
+        boolean b = false;
+        boolean resultAnd = a && b;
+        System.out.println("hasil a && b: " + resultAnd);
+        
+        boolean resultOr = a || b;
+        System.out.println("hasil a || b: " + resultOr);
+        
+        boolean resultNotA = !a;
+        System.out.println("hasil !a: " + resultNotA);
+        
+        int x = 10;
+        int y = 5;
+        
+        if (x > y) {
+                 System.out.println("x lebih besar dari y");
+            
+        }
+        
+        else if (x < y) {
+            System.out.println("x lebih kecil fari y");
+            } else {
+                System.out.println("x sama dengan y");
+        
+       }
+    
+
+    }
+    
+}
