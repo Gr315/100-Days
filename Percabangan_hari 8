@@ -1,0 +1,27 @@
+package day8;
+
+public class Main {
+    
+    public static void main(String[] args) {
+      int usia = 90;
+        
+        if ((usia>=1) && (usia<=13)) {
+            System.out.println("anak-anak");
+        }
+        
+        else if ((usia>=14) && (usia<=20)) {
+            System.out.println("remaja");
+    
+       }
+        
+        else if ((usia>=21) && (usia<=50)) {
+            System.out.println("dewasa");
+        
+        }    
+        
+        else {
+            System.out.println("manula");
+        }
+    }
+    
+}
