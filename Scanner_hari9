@@ -1,0 +1,25 @@
+package day.pkg9;
+
+import java.util.Scanner;
+
+public class Day9 {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("inputkan nama : ");
+        String nama = input.nextLine(); 
+
+        System.out.print("inputkan nilai 2 : ");
+        int nilai2 = input.nextInt(); 
+        
+        System.out.print("inputkan nilai 4 :");
+        int nilai4 = input.nextInt();
+
+        System.out.print("penambahan dari nilai 2 dan nilai 4 :" +(nilai2 + nilai4));
+        System.out.println("nama anda adalah : "+nama);
+    
+
+    }
+    
+}
