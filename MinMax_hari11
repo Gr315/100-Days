@@ -1,0 +1,30 @@
+package day.pkg11;
+
+import java.util.Scanner;
+
+public class MinMaxCalculator {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Masukkan nilai a: ");
+        double a = scanner.nextDouble();
+        System.out.print("Masukkan nilai b: ");
+        double b = scanner.nextDouble();
+        System.out.print("Masukkan nilai c: ");
+        double c = scanner.nextDouble();
+        System.out.print("Masukkan nilai d: ");
+        double d = scanner.nextDouble();
+        System.out.print("Masukkan nilai e: ");
+        double e = scanner.nextDouble();
+        
+        double min = Math.min(Math.min(Math.min(Math.min(a, b), c), d), e);
+        double max = Math.max(Math.max(Math.max(Math.max(a, b), c), d), e);
+        
+        System.out.println("Nilai MIN adalah: " + min);
+        System.out.println("Nilai MAX adalah: " + max);
+        
+        
+        
+    }
+}
