@@ -1,0 +1,26 @@
+package day12;
+
+public class Character {
+    
+    public static void main(String[] args) {
+        char myChar = 'G';
+        System.out.println("Karakter: " + myChar);
+        
+        char lowercaseChar = Character.toLowerCase (myChar);
+        System.out.println("Karakter kecil:" + lowercaseChar);
+        
+        char uppercaseChar = Character.toUpperCase (myChar);
+        System.out.println("Karakter besar:" + uppercaseChar);
+        
+        
+        if (Character.isDigit(myChar)) {
+            System.out.println("Ini adalah digit.");
+            
+        } else {  
+            System.out.println("Ini bukan digit.");
+            
+        }
+        
+    }
+    
+}
