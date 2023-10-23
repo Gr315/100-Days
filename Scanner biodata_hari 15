@@ -1,0 +1,32 @@
+package day15;
+
+import java.util.Scanner;
+
+public class scanner biodata {
+    
+    public static void main(String[] args) { 
+    Scanner input = new Scanner (System.in);
+    
+   String nama ;
+   String nim; 
+   String prodi;
+   String alamat;
+    
+   System.out.printl("masukkan nama =");
+    nama = input.nextLine();
+   System.out.println("masukkan nim =");
+    nim = input.nextLine();
+   System.out.println("masukkan prodi");
+    prodi = input.nextLine();
+   System.out.println("masukkan alamat");
+    alamat = input.nextLine();
+   System.out.println("---------------");
+    System.out.printl("nama saya =" + nama);
+    System.out.println("nim saya =" + nim);
+    System.out.println("prodi saya =" + prodi);
+    System.out.println("alamat saya =" + alamat);
+        
+        
+    }
+    
+}
