@@ -12,7 +12,7 @@ public class scanner biodata {
    String prodi;
    String alamat;
     
-   System.out.printl("masukkan nama =");
+   System.out.println("masukkan nama =");
     nama = input.nextLine();
    System.out.println("masukkan nim =");
     nim = input.nextLine();
@@ -21,7 +21,7 @@ public class scanner biodata {
    System.out.println("masukkan alamat");
     alamat = input.nextLine();
    System.out.println("---------------");
-    System.out.printl("nama saya =" + nama);
+    System.out.println("nama saya =" + nama);
     System.out.println("nim saya =" + nim);
     System.out.println("prodi saya =" + prodi);
     System.out.println("alamat saya =" + alamat);
