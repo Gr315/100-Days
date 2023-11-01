@@ -1,0 +1,11 @@
+package day24;
+
+public class exampleArray {
+    
+    public static void main(String[] args) {
+        String[] teman = {"Greis","Avika", "Ria", "Rifqah", "Hikma"};
+        
+        System.out.println(teman[3]);
+    }
+    
+}
