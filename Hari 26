@@ -1,0 +1,16 @@
+package Greis;
+
+public class day26 {
+    
+    public static void main(String[] args) {
+        int genap = 4;
+
+        do {System.out.println("Angka :" + genap);
+           genap+=4;
+     } while( genap <= 20);
+        
+        
+    }
+    
+    
+}
