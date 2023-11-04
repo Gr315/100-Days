@@ -1,0 +1,29 @@
+package day27;
+
+import java.util.Scanner;
+
+public class latihan {
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        int angka = sc.nextInt();
+        
+        if (angka >0 && angka<10) {
+            System.out.println("satuan");
+            
+        } else if (angka >10 && angka <100) {
+            System.out.println("puluhan");
+        
+    } else if (angka >100 && angka <1000) {
+        System.out.println("ratusan");
+    
+    }else 
+        System.out.println("ribuan");
+        {
+        
+    }
+            
+        
+    }
+    
+}
