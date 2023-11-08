@@ -1,0 +1,22 @@
+package day31;
+
+import java.util.Scanner;
+
+public class hari31 {
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int angka = sc.nextInt();
+        
+        if(angka>0){
+            System.out.println("positif");
+        } else if(angka<0){
+            System.out.println("negatif");
+    }
+        else if (angka==0){
+            System.out.println("nol");
+    }
+        
+    }
+    
+}
