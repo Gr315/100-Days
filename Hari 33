@@ -1,0 +1,20 @@
+package day33;
+
+import java.util.Scanner;
+
+public class Hadiah {
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int belanja = 100000;
+        System.out.print("Total belanjaan : Rp ");
+        belanja = sc.nextInt();
+        
+        if (belanja > 200000) {
+            System.out.println("selamat, anda mendapatkan hadiah! ");
+        }
+        System.out.println("Terimakasih...");
+    }
+    
+}
