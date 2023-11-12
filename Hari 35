@@ -1,0 +1,17 @@
+package day35;
+
+public class Inisialisasi {
+    
+    public static void main(String[] args) {
+        char huruf = 'P';
+        if (huruf == 'L') {
+            System.out.println("Laki-Laki");
+        } else if (huruf == 'P') {
+            System.out.println("Perempuan");
+    } else {
+        System.out.println("Inputnya sudah benar");
+    }
+        
+    }
+    
+}
