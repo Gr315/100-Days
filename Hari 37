@@ -1,0 +1,23 @@
+package pckge100days;
+
+public class day37 {
+    
+    public static void main(String[] args) {
+        int a = 9;
+        
+        int hasil = 0;
+        int i = 1;
+        do {
+            System.out.print(i);
+            
+            if (i != a){
+                System.out.print(" + ");
+            } else {
+                System.out.print(" = ");
+            }
+            hasil += i;
+            i++;
+        } while (i <= a);
+        System.out.println(hasil);
+    }
+}
