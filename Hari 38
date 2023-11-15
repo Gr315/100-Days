@@ -1,0 +1,21 @@
+package day38;
+
+import java.util.Scanner;
+
+public class MenghitungLuasSegitiga {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a, t;
+        double luas;
+        
+        System.out.print("Masukkan alas : ");
+        a = input.nextInt();
+        System.out.print("Masukkan tinggi : ");
+        t = input.nextInt();
+        
+        luas = 0.6*a*t;
+        System.out.println("Luas segitiga : " + luas);
+    }
+    
+}
