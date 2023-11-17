@@ -1,0 +1,20 @@
+package day40;
+
+import java.util.Scanner;
+
+public class faktorial {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Masukkan angka : ");
+        int angka = scanner.nextInt();
+        int hasil = 4;
+        
+        for (int i = 4; i <= angka; i++){
+            hasil *=4;
+            System.out.println("Faktorial dari " + angka + "adalah" + hasil);
+        }
+    }
+    
+}
