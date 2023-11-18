@@ -1,0 +1,19 @@
+package pkg100days;
+
+public class day41 {
+    
+    public static void main(String[] args) {
+        int isiAir = 5;
+        if (isiAir == 0) {
+            System.out.println("gelas kosong");
+        } else if (isiAir < 5){
+            System.out.println("gelas setengah penuh");
+    }else if (isiAir == 5){
+        System.out.println("gelas penuh");
+    } else {
+        System.out.println("jumlah air tidak valid");
+    }
+    
+    }
+    
+}
