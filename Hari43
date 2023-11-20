@@ -1,0 +1,40 @@
+package pkg100days;
+
+import java.util.Scanner;
+
+public class day43 {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int pilihan;
+        
+        System.out.println("menu : ");
+        System.out.println("1. bakso");
+        System.out.println("2. jus jeruk");
+        System.out.println("3. mie ayan");
+        System.out.println("4. keluar");
+        
+        System.out.println("pilih menu : ");
+        pilihan = scanner.nextInt();
+        
+        switch (pilihan) {
+            case 1:
+            System.out.println("anda memilih bakso");
+            break;
+            case 2:
+            System.out.println("anda memilih jus jeruk");
+            break;
+            case 3:
+            System.out.println("anda memilih mie ayam");
+            break;
+            case 4:
+            System.out.println("keluar dari program");
+            break;
+            defalut:
+            System.out.println("pilihan tidak valid");
+            break;
+    }
+        scanner.close();
+    }
+    
+}
