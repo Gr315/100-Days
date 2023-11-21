@@ -1,0 +1,20 @@
+package pkg100days;
+
+public class day44 {
+    
+    public static void main(String[] args) {
+        int totalBelanjaRonaldo = 540000;
+        int totalBelanjaMessi = 230000;
+        int totalBelanja = totalBelanjaRonaldo + totalBelanjaMessi;
+        
+        if (totalBelanja >= 300000) {
+            double diskon = totalBelanja * 0.2;
+            double totalBelanjaSetelahDiskon = totalBelanja - diskon;
+            
+            System.out.println("Total belanja Ronaldo dan Messi setelah diskon : Rp" + totalBelanjaSetelahDiskon);
+        } else {
+            System.out.println("Total belanja Ronaldo dan Messi : Rp" + totalBelanja);
+        }
+    }
+    
+}
