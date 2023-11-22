@@ -1,0 +1,26 @@
+package pkg100days;
+
+import java.util.Scanner;
+
+public class day45 {
+    
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+        int jumlahData;
+        System.out.print("Masukkan jumlah data:");
+        jumlahData = input.nextInt();
+        
+        for (int i = 1 <= jumlahData; i++) {
+            System.out.println("Data ke-");
+            System.out.print("Masukkan beratBadan (kg):");
+            double beratBadan = input.nextInt();
+            System.out.print("Nasukkan tinggiBadan (meter)");
+            double tinggiBadan = input.nextInt();
+            double beratBadanIdeal = beratBadan / (tinggiBadan * tinggiBadan);
+            System.out.println("Berat badan ideal: " + beratBadanIdeal);
+            
+            System.out.println();
+        }
+    }
+    
+}
