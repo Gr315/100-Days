@@ -1,0 +1,31 @@
+package pkg100days;
+
+import java.util.Scanner;
+
+public class day53 {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Masukkan jumlah mahasiswa :");
+        int jumlahMahasiswa = input.nextInt();
+        
+        int[] nilaiMahasiswa = new int[jumlahMahasiswa];
+        
+        for (int i = 0; i < jumlahMahasiswa; i++) {
+            System.out.print("nilai mahasiswa");
+            nilaiMahasiswa[i] = input.nextInt();
+        }
+        System.out.print("nilai mahasiswa");
+        for (int i = 0; i < jumlahMahasiswa; i++) {
+            System.out.print(nilaiMahasiswa[i]);
+            
+            if (i != jumlahMahasiswa-1) {
+                System.out.print( );
+            }
+        }
+        
+        System.out.println();
+    }
+    
+}
