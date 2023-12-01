@@ -1,0 +1,29 @@
+package pkg100days;
+
+public class day54 {
+    
+    public static void main(String[] args) {
+        int[] array = {5, 3, 8, 2, 7};
+        int nilaiTerkecil = array[0];
+        
+        if (array.length == 0) { 
+            System.out.println("Array kosong");
+        } else {
+            for (int i = 1; i < array.length; i++) {
+                
+                if (array[i] < nilaiTerkecil) { 
+                    nilaiTerkecil = array[i];
+                }
+            }
+            
+            if (nilaiTerkecil % 2 == 0) { 
+                System.out.println("Nilai terkecil adalah bilangan genap");
+            } else {
+                
+            System.out.println("Nilai terkecil adalah bilangan genap");
+            
+            }
+        }
+    }
+    
+}
