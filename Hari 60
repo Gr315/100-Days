@@ -1,0 +1,35 @@
+package pkg100days;
+
+import java.util.Scanner;
+
+public class Day60 {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        String[][] dataMahasiswa = new String[5][3];
+        
+        for ( int i = 0; i < dataMahasiswa.length; i++) {
+            System.out.print("Masukkan Nama : ");
+            String nama = input.nextLine();
+            System.out.print("Masukkan Nim : ");
+            String nim = input.nextLine();
+            System.out.print("Masukkan Nilai : ");
+            String nilai = input.nextLine();
+            
+            System.out.println("-------------------");
+            
+            dataMahasiswa[i][0] = nama;
+            dataMahasiswa[i][1] = nim;
+            dataMahasiswa[i][2] = nilai;
+        }
+        
+        input.close();
+        
+        System.out.println("-------------------- CETAK DATA ----------------------");
+        for (String[] mahasiswa : dataMahasiswa) {
+            System.out.println(mahasiswa[0] + " " + mahasiswa[1] + " " + mahasiswa[2]);
+        }
+    }
+    
+}
