@@ -1,0 +1,39 @@
+package pkg100days;
+
+import java.util.Arrays;
+
+public class day63 {
+    
+    public static void main(String[] args) {
+        int[][] array = {
+            {9, 2, 5},
+            {4, 7, 1},
+            {6, 3, 8}
+        };
+        
+        int[] nilaiTerkecil = cariNilaiTerkecil(array);
+        
+        System.out.println("Nilai terkecil dari setiap kolom:");
+        for (int i = 0; i < nilaiTerkecil.length; i++) {
+            System.out.println("Kolom " + (i+1) + ": " + nilaiTerkecil[i]);
+        }
+    }
+    
+    public static int[] cariNilaiTerkecil(int[][] array) {
+        
+        int[] nilaiTerkecil = new int[array[0].length];
+        
+        for (int j = 0; j < array[0].length; j++) {
+            int[] kolom = new int[array.length];
+            for (int i = 0; i < array.length; i++) {
+                kolom[i] = array[i][j];
+            }
+            
+            Arrays.sort(kolom);
+            nilaiTerkecil[j] = kolom[0];
+        }
+        
+        return nilaiTerkecil;
+    }
+
+    }
