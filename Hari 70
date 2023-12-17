@@ -1,0 +1,20 @@
+package pkg100days;
+
+import java.util.Scanner;
+
+public class day70 {
+    
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in); 
+
+    System.out.println("Masukkan panjang persegi panjang:");
+    int panjang = myObj.nextInt(); 
+
+    System.out.println("Masukkan lebar persegi panjang:");
+    int lebar = myObj.nextInt(); 
+        // Hitung luas dan keliling di sini
+
+    // Cetak hasilnya
+    }
+    
+}
