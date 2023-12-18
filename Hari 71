@@ -1,0 +1,23 @@
+package pkg100days;
+
+public class day71 {
+    
+    public static void main(String[] args) {
+        int[] array = {1,4,6,4,4,4,5,3,9,7};
+        int target = 4;
+        int lastIndex = -1;
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == target) {
+                lastIndex = i;
+            }
+        }
+
+        if (lastIndex != -1) {
+            System.out.println("Indeks terakhir dari " + target + " adalah " + lastIndex);
+        } else {
+            System.out.println("Nilai " + target + " tidak ditemukan dalam array.");
+        }
+    }
+    
+}
