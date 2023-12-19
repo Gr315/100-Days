@@ -1,0 +1,32 @@
+package pkg100days;
+
+public class day72 {
+    
+    public static void main(String[] args) {
+        int[][] array = new int[3][3];
+
+        // Menginisialisasi semua elemen array dengan 0
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                array[i][j] = 0;
+            }
+        }
+        
+          // Mengubah elemen di indeks [0][0] menjadi 1
+        array[0][0] = 1;
+
+        // Menampilkan elemen di indeks [2][2]
+        System.out.println(array[2][2]);
+
+        // Menampilkan semua elemen array
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        // dst...
+    }
+    
+}
