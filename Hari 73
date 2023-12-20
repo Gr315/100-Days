@@ -1,0 +1,25 @@
+package pkg100days;
+
+import java.util.Scanner;
+
+public class day73 {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        
+        int[] gajiPokok = new int[1];
+        int[] lamaLembur = new int[1];
+
+        System.out.println("Masukkan gaji pokok: ");
+        gajiPokok[0] = scanner.nextInt();
+
+        System.out.println("Masukkan lama lembur dalam jam: ");
+        lamaLembur[0] = scanner.nextInt();
+
+        int gajiLembur = lamaLembur[0] * 55000;
+        int gajiBersih = gajiPokok[0] + gajiLembur;
+        System.out.println("Gaji bersih yang diterima karyawan adalah: Rp. " + gajiBersih);
+    }
+    
+}
