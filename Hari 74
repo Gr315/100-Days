@@ -1,0 +1,39 @@
+package pkg100days;
+
+import java.util.Scanner;
+
+public class day74 {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Masukkan jumlah tanah yang dijual: ");
+        int jumlahTanah = scanner.nextInt();
+        double[] luasTanah = new double[jumlahTanah];
+        double hargaJualPerMeter = 300000;
+        double[] totalHargaJual = new double[jumlahTanah];
+        double[] pajak = new double[jumlahTanah];
+        double[] uangBersih = new double[jumlahTanah];
+
+        for (int i = 0; i < jumlahTanah; i++) {
+            System.out.println("Masukkan luas tanah ke-" + (i+1) + " (dalam meter): ");
+            luasTanah[i] = scanner.nextDouble();
+            totalHargaJual[i] = luasTanah[i] * hargaJualPerMeter;
+
+            if (totalHargaJual[i] >= 100000000) {
+                pajak[i] = totalHargaJual[i] * 0.05;
+            } else if (totalHargaJual[i] >= 50000000) {
+                pajak[i] = totalHargaJual[i] * 0.03;
+            } else if (totalHargaJual[i] < 5000000) {
+                pajak[i] = totalHargaJual[i] * 0.01;
+            } else {
+                pajak[i] = 0;
+            }
+        
+        uangBersih[i] = totalHargaJual[i] - pajak[i];
+        }
+
+        for (int i = 0; i < jumlahTanah; i++) {
+            System.out.println("Uang bersih yang didapatkan dari hasil penjualan tanah ke-" + (i+1) + " adalah: Rp." + uangBersih[i]);
+        }
+    }
+}
