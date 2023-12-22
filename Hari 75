@@ -1,0 +1,25 @@
+package pkg100days;
+
+public class day75 {
+    
+    public static void main(String[] args) {
+        int[][] nilaiSiswa = {
+            {70, 80, 90, 85, 95},
+            {75, 85, 95, 80, 90},
+            {80, 90, 100, 85, 95},
+            {85, 95, 80, 90, 100},
+            {90, 100, 85, 95, 80}
+        };
+
+        int totalNilai = 0;
+
+        for (int i = 0; i < nilaiSiswa.length; i++) {
+            for (int j = 0; j < nilaiSiswa[i].length; j++) {
+                totalNilai += nilaiSiswa[i][j];
+            }
+        }
+
+        System.out.println("Total nilai semua siswa adalah: " + totalNilai);
+    }
+    
+}
