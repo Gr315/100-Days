@@ -1,0 +1,21 @@
+package pkg100days;
+
+public class day76 {
+    
+    public static void main(String[] args) {
+        int[][] arrayDuaDimensi = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        System.out.println("Elemen array dua dimensi: ");
+        for (int i = 0; i < arrayDuaDimensi.length; i++) {
+            for (int j = 0; j < arrayDuaDimensi[i].length; j++) {
+                System.out.print(arrayDuaDimensi[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+    
+}
