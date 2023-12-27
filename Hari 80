@@ -1,0 +1,41 @@
+package pkg100days;
+
+import java.util.Scanner;
+
+public class day80 {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Berapa banyak data yang ingin Anda masukkan?");
+        int jumlahData = input.nextInt();
+
+        double[] penghasilan = new double[jumlahData];
+        String[] pekerjaan = new String[jumlahData];
+
+        for (int i = 0; i < jumlahData; i++) {
+            System.out.println("Masukkan penghasilan orang ke-" + (i+1) + ": ");
+            penghasilan[i] = input.nextDouble();
+            System.out.println("Apakah orang ke-" + (i+1) + " adalah PNS? (Ya/Tidak)");
+            pekerjaan[i] = input.next();
+        }
+
+        for (int i = 0; i < jumlahData; i++) {
+            double pajak;
+            if (penghasilan[i] >= 5000000) {
+                pajak = 0.10;
+            } else if (penghasilan[i] >= 3000000) {
+                pajak = 0.05;
+            } else {
+                pajak = 0;
+            }
+
+            if (pekerjaan[i].equalsIgnoreCase("Ya")) {
+                pajak += 0.05;
+            }
+            double penghasilanBersih = penghasilan[i] - (penghasilan[i] * pajak);
+            System.out.println("Penghasilan bersih orang ke-" + (i+1) + " adalah: " + penghasilanBersih);
+        }
+    }
+    
+}
