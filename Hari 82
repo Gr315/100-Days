@@ -1,0 +1,31 @@
+package pkg100days
+
+import java.util.Scanner;
+
+public class day82 {
+    
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Masukkan modal awal: ");
+        double modalAwal = scanner.nextDouble();
+        System.out.print("Masukkan lama investasi (dalam tahun): ");
+        int lamaInvestasi = scanner.nextInt();
+
+        double[] keuntunganSetiapTahun = new double[lamaInvestasi];
+        double[] modalSetiapTahun = new double[lamaInvestasi];
+        double modal = modalAwal;
+        for (int tahun = 0; tahun < lamaInvestasi; tahun++) {
+            double keuntungan = modal * 0.05;
+            modal += keuntungan;
+            keuntunganSetiapTahun[tahun] = keuntungan;
+            modalSetiapTahun[tahun] = modal;
+        }
+
+        for (int tahun = 0; tahun < lamaInvestasi; tahun++) {
+            System.out.printf("Pada tahun ke-%d, keuntungan Anda adalah %.2f dan total modal Anda menjadi %.2f\n", tahun + 1, keuntunganSetiapTahun[tahun], modalSetiapTahun[tahun]);
+        }
+    
+    }
+    
+}
