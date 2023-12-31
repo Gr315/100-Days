@@ -1,0 +1,58 @@
+package pkg100days;
+
+public class day84 {
+    private static final int JALAN = 0;
+    private static final int TEMBOK = 1;
+    private static final int JALUR = 2;
+    
+    public static void main(String[] args) {
+        int[][] labirin = {
+            {1, 0, 0, 0},
+            {1, 1, 0, 1},
+            {0, 0, 0, 0},
+            {1, 0, 1, 1}
+        };
+
+        if (temukanJalur(labirin, 0, 1)) {
+            cetakLabirin(labirin);
+        } else {
+            System.out.println("Tidak ada jalur yang ditemukan.");
+        }
+    }
+
+    public static boolean temukanJalur(int[][] labirin, int x, int y) {
+        if (x < 0 || y < 0 || x >= labirin.length || y >= labirin[0].length) {
+            return false;
+        }
+
+        if (labirin[x][y] == TEMBOK) {
+            return false;
+        }
+
+        if (x == 2 && y == 3) {
+            labirin[x][y] = JALUR;
+            return true;
+        }
+
+        labirin[x][y] = JALUR;
+
+        if (temukanJalur(labirin, x - 1, y)
+            || temukanJalur(labirin, x + 1, y)
+            || temukanJalur(labirin, x, y - 1)
+            || temukanJalur(labirin, x, y + 1)) {
+            return true;
+        }
+
+        labirin[x][y] = JALAN;
+        return false;
+    }
+        public static void cetakLabirin(int[][] labirin) {
+        for (int i = 0; i < labirin.length; i++) {
+            for (int j = 0; j < labirin[0].length; j++) {
+                System.out.print(labirin[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+    
+}
