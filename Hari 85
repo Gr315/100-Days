@@ -1,0 +1,34 @@
+package pkg100days;
+
+import java.util.Scanner;
+
+public class day85 {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Masukkan jumlah baris:");
+        int baris = scanner.nextInt();
+        System.out.println("Masukkan jumlah kolom:");
+        int kolom = scanner.nextInt();
+
+        boolean[][] arrayLogika = new boolean[baris][kolom];
+
+        for (int i = 0; i < baris; i++) {
+            for (int j = 0; j < kolom; j++) {
+                System.out.println("Masukkan nilai logika untuk baris " + (i+1) + " kolom " + (j+1) + " (true/false):");
+                arrayLogika[i][j] = scanner.nextBoolean();
+            }
+        }
+
+        System.out.println("Array logika Anda:");
+        for (int i = 0; i < baris; i++) {
+            for (int j = 0; j < kolom; j++) {
+                System.out.print(arrayLogika[i][j] + " ");
+            }
+            System.out.println();
+        }
+                
+    }
+    
+}
