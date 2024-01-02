@@ -1,0 +1,23 @@
+package pkg100days;
+
+public class day86 {
+    
+    public static void main(String[] args) {
+        long[][] arrayDuaDimensi = {
+            {10000000000L, 20000000000L, 30000000000L},
+            {40000000000L, 50000000000L, 60000000000L},
+            {70000000000L, 80000000000L, 90000000000L}
+        };
+        cetakArrayDuaDimensi(arrayDuaDimensi);
+    }
+
+    public static void cetakArrayDuaDimensi(long[][] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + " ");
+                 }
+            System.out.println();
+        }
+    }
+    
+}
