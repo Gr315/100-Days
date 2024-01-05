@@ -1,0 +1,29 @@
+package pkg100days;
+
+import java.util.Scanner;
+
+public class day90 {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        boolean[][] arr = new boolean[3][3];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.println("Masukkan nilai boolean untuk elemen [" + i + "][" + j + "]: ");
+                boolean bool = input.nextBoolean();
+                arr[i][j] = bool;
+            }
+        }
+        
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        input.close();
+    }
+    
+}
