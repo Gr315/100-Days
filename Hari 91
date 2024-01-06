@@ -1,0 +1,35 @@
+package pkg100days;
+
+import java.util.Scanner;
+
+public class day91 {
+    
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Masukkan jumlah mahasiswa:");
+        int jumlahMahasiswa = scanner.nextInt();
+        System.out.println("Masukkan jumlah mata kuliah:");
+        int jumlahMataKuliah = scanner.nextInt();
+        scanner.nextLine(); // Mengkonsumsi newline yang tersisa
+
+        String[][] nilai = new String[jumlahMahasiswa][jumlahMataKuliah];
+
+        for (int i = 0; i < jumlahMahasiswa; i++) {
+            for (int j = 0; j < jumlahMataKuliah; j++) {
+                System.out.println("Masukkan nilai untuk mahasiswa " + (i+1) + " mata kuliah " + (j+1) + ":");
+                nilai[i][j] = scanner.nextLine();
+                 }
+        }
+
+        System.out.println("Nilai Anda:");
+        for (int i = 0; i < jumlahMahasiswa; i++) {
+            for (int j = 0; j < jumlahMataKuliah; j++) {
+                System.out.print("Nilai mahasiswa " + (i+1) + " mata kuliah " + (j+1) + ": " + nilai[i][j]);
+                System.out.println();
+            }
+        }
+    }
+    
+}
