@@ -1,0 +1,33 @@
+package pkg100days;
+
+import java.util.Random;
+
+public class day94 {
+    
+    public static void main(String[] args) {
+        Random rand = new Random();
+        int[][] myArray = new int[5][5];
+        
+        int i = 0;
+        do {
+            int j = 0;
+            do {
+                myArray[i][j] = rand.nextInt(100); // angka acak antara 0-99
+                j++;
+            } while(j < myArray[i].length);
+            i++;
+        } while(i < myArray.length);
+        
+        i = 0;
+        do {
+            int j = 0;
+            do {
+                System.out.print(myArray[i][j] + " ");
+                j++;
+            } while(j < myArray[i].length);
+            System.out.println();
+            i++;
+        } while(i < myArray.length);
+    }
+    
+}
