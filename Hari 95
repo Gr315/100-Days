@@ -1,0 +1,27 @@
+package pkg100days;
+
+public class day95 {
+    
+    public static void main(String[] args) {
+ 
+     short[][] matriksIdentitas = new short[3][3];
+        
+         for (int i = 0; i < 3; i++) {
+           for (int j = 0; j < 3; j++) {
+             if (i == j) {
+            matriksIdentitas[i][j] = 1;
+        } else {
+            matriksIdentitas[i][j] = 0;
+        }
+    }
+}
+        
+         for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+        System.out.print(matriksIdentitas[i][j] + " ");
+    }
+    System.out.prinln();
+         }       
+    }
+    
+}
