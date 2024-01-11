@@ -1,0 +1,29 @@
+package pkg100days;
+
+import java.util.Random;
+
+public class day96 {
+    
+    public static void main(String[] args) {
+        int[][] matriksAngka = new int[6][6];
+        Random rand = new Random();
+            
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 6; j++) {
+                matriksAngka[i][j] = rand.nextInt(50) + 1;
+            }
+        }
+        
+        for (int i = 0; i < 6; i++) {
+            matriksAngka[i][i] = 0;
+        }
+        
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 6; j++) {
+                System.out.print(matriksAngka[i][j] + " ");
+            }
+            System.out.println();
+        } 
+    }
+    
+}
