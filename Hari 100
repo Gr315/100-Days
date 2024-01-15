@@ -1,0 +1,27 @@
+package pkg100days;
+
+import java.util.Scanner;
+
+public class day100 {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int[][][] array3D = new int[3][3][3];
+
+        System.out.println("Masukkan 27 integer:");
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                for (int k = 0; k < 3; k++) {
+                    array3D[i][j][k] = input.nextInt();
+                }
+            }
+        }
+
+        input.close();
+
+        System.out.println("Anda telah memasukkan data ke dalam array 3D.");
+    }
+    
+}
